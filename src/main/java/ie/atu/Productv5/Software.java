@@ -1,4 +1,4 @@
-package Productv5;
+package ie.atu.Productv5;
 
 import ie.atu.productv3.Product;
 

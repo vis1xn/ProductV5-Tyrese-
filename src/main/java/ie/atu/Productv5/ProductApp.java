@@ -1,4 +1,4 @@
-package Productv5;
+package ie.atu.Productv5;
 
 import java.util.Scanner;
 
@@ -17,11 +17,12 @@ public class ProductApp {
             System.out.print("Enter product code: ");
             String productCode = sc.nextLine();  // read the product code
 
+            Product yourProduct = ProductDB.getProduct(productCode);
 
             System.out.println();
-            if (p != null) {
-                System.out.println("Description: " + p.toString());
-                System.out.println("Price:       " + p.getPriceFormatted());
+            if (yourProduct != null) {
+                System.out.println("Description: " + yourProduct.toString());
+                System.out.println("Price:       " + yourProduct.getPriceFormatted());
             } else {
                 System.out.println("No product matches this product code.");
             }

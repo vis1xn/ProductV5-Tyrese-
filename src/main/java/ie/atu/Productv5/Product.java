@@ -1,4 +1,4 @@
-package Productv5;
+package ie.atu.Productv5;
 
 import java.text.NumberFormat;
 
@@ -11,6 +11,10 @@ public class Product {
     protected static int count = 0;
 
     public Product() {
+        description = "";
+        code = "";
+        price = 0.0;
+        count++;
     }
 
     public void setCode(String code) {
